@@ -937,11 +937,11 @@ function setSelected(elem) {
 
 function changeMap() {
   const map = ElMaps.find(el=> el.classList.contains("display"));
-  let currentMapIndex = maps.indexOf(map);
-  if (map != undefined && maps.length>1) {
+  let currentMapIndex = ElMaps.indexOf(map);
+  if (map != undefined && ElMmaps.length>1) {
     map.classList.remove("display");
-    currentMapIndex = (currentMapIndex + 1) % maps.length;
-    maps[currentMapIndex].classList.add("display");
+    currentMapIndex = (currentMapIndex + 1) % ElMaps.length;
+    ElMaps[currentMapIndex].classList.add("display");
   }
   
 }
